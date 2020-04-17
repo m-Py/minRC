@@ -10,7 +10,8 @@ print_matrix(data)
 \item{data}{A N x M data matrix}
 }
 \value{
-A List containing the input arguments.
+A list of length 3, containing (a) The number of rows in `data`; (b) the 
+number of columns in `data`
 }
 \description{
 Takes a matrix and prints it, then exchanges two points and prints the 

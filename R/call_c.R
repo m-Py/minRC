@@ -17,16 +17,14 @@
 #' distance_matrix <- as.matrix(dist(data))
 #' print_matrix(distance_matrix)
 #' 
-#' @export 
-#' 
 #' @return 
-#' A List containing the input arguments. 
+#' A list of length 3, containing (a) The number of rows in `data`; (b) the 
+#' number of columns in `data`
 #' 
 #' @useDynLib minRC call_c
 #' 
 #' @export
-#' A list of length 3, containing (a) The number of rows in `data`; (b) the 
-#' number of columns in `data`
+#' 
 #' 
 print_matrix <- function(data) {
 
