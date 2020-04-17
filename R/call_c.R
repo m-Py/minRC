@@ -1,8 +1,7 @@
 
 #' Example function to call C from R
 #' 
-#' Takes a matrix and prints it, then exchanges two points and prints the 
-#' matrix again.
+#' Takes a matrix and prints it.
 #' 
 #' @param data A N x M data matrix
 #' 

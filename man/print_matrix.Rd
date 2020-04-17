@@ -14,8 +14,7 @@ A list of length 3, containing (a) The number of rows in `data`; (b) the
 number of columns in `data`
 }
 \description{
-Takes a matrix and prints it, then exchanges two points and prints the 
-matrix again.
+Takes a matrix and prints it.
 }
 \details{
 The input argument is passed as a pointer to C. To get a return value,
