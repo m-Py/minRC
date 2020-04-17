@@ -1,0 +1,10 @@
+Package: minRC
+Title: Minimal example of using C in R
+Description: Illustrates how to pass a matrix from R to C and process it in C.
+Version: 0.01
+Author: Martin Papenberg [aut, cre] (<https://orcid.org/0000-0002-9900-4268>)
+Maintainer: Martin Papenberg <martin.papenberg@hhu.de>
+Depends: R (>= 3.6)
+License: GPL (>=3)
+LazyData: true
+RoxygenNote: 7.0.2

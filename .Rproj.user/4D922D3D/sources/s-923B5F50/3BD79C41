@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587118462056.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3BD79C41",
+    "lastKnownWriteTime" : 1587118900,
+    "last_content_update" : 1587118900413,
+    "path" : "~/git/minRC/src/call_c.c",
+    "project_path" : "src/call_c.c",
+    "properties" : {
+        "cursorPosition" : "39,37",
+        "scrollLine" : "37"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "c"
+}
