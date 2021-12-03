@@ -1,10 +1,34 @@
 
 #include <stdlib.h> 
 #include <stdio.h>
+#include <R.h>
+#include <math.h>
 
 // Declare Functions
 void call_c(double *data, int *N, int *M);
 void print_matrix(size_t N, size_t M, double matrix[N][M]);
+double uniform_rnd_number();
+double uni_rnd_number_range(double min, double max);
+int random_integer(int min, int max);
+
+// generate a random uniform number in range
+double uni_rnd_number_range(double min, double max) {
+    double number = uniform_rnd_number();
+    return (min + number * (max - min));
+};
+
+int random_integer(int min, int max) {
+    int integer = (int) floor(uniform_rnd_number() * (max - min + 1)) + min;
+    return(integer);
+}
+
+double uniform_rnd_number() {
+    GetRNGstate();
+    double my_number = unif_rand();
+    PutRNGstate();
+    return(my_number);
+}
+
 
 /* Print a matrix
  * param *data: vector of data points (in R, this is a data frame,
@@ -35,10 +59,17 @@ void call_c(double *data, int *N, int *M) {
                 }
         }
         
-        printf("Input matrix: \n");
+        /*printf("Input matrix: \n");
         
-        print_matrix(n, m, data_pts);
+        //print_matrix(n, m, data_pts);
+        printf("Uniform number: \n");
+        printf(" %g \n", uniform_rnd_number());
+        printf("Integer: \n");
+        printf(" %d \n", random_integer(0, 3));*/
         
+        // return random integer via pointer
+        *N = random_integer(0, 3);
+        *data = uni_rnd_number_range(.2, .4);
 }
 
 
